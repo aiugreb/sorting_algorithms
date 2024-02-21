@@ -13,7 +13,7 @@
  * @n: Integer stored in the node
  * @prev: Pointer to the previous element of the list
  * @next: Pointer to the next element of the list
- */
+*/
 typedef struct listint_s
 {
 	const int n;
@@ -31,6 +31,9 @@ void shell_sort(int *array, size_t size);
 void swap(int *a, int *b);
 size_t partition(int *array, size_t low, size_t high, size_t size);
 void quick_sort(int *array, size_t size);
+void merge_sort(int *array, size_t size);
+void heap_sort(int *array, size_t size);
+void radix_sort(int *array, size_t size);
 void quick_sort_recursion(int *array, size_t low, size_t high, size_t size);
 void counting_sort(int *array, size_t size);
 
